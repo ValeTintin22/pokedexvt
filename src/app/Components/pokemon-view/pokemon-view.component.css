@@ -1,0 +1,100 @@
+.pokedex-view {
+    height: 100vh;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 253, 161);
+    padding: 20px;
+    overflow: hidden;
+    gap: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.pokedex-view:hover {
+    transform: scale(1.02);
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.pokemon {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background: linear-gradient(135deg, rgba(255, 216, 240, 0.8), rgba(255, 255, 255, 0.5));
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.pokemon:hover {
+    transform: translateY(-5px);
+}
+
+.grafico {
+    border-bottom-right-radius: 50px;
+    background: linear-gradient(135deg, #51dceecc, rgba(255, 255, 255, 0.5));
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.grafico:hover {
+    transform: translateY(5px);
+}
+
+.point {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 183, 101);
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.point:hover {
+    background-color: rgb(255, 150, 50);
+    transform: scale(1.2);
+}
+
+.point:nth-of-type(1) {
+    left: calc(50% + 20px);
+}
+
+.point:nth-of-type(2) {
+    left: calc(50% - 20px);
+}
+
+.square {
+    position: absolute;
+    height: 20px;
+    width: 30px;
+    background-color: grey;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.square:hover {
+    background-color: rgba(150, 150, 150, 0.8);
+}
