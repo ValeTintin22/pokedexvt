@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { PokebusComponentComponent } from './pokebus-component.component';
+import { PokebusComponentComponent } from '/pokebus-component.component';
 
 describe('PokebusComponentComponent', () => {
   let component: PokebusComponentComponent;

@@ -1,0 +1,23 @@
+.sorpresa-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #fbff0c; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ffd900; 
+  }
+  
+  p {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  

@@ -9,8 +9,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./pokebus-component.component.css']
 })
 export class PokebusComponent {
-  searchTerm: string = ''; // Almacena el término de búsqueda
-  pokemons: string[] = [ 'Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard',
+  searchTerm: string = ''; 
+  pokebus: string[] = [ 'Bulbasaur', 'Ivysaur', 'Venusaur', 'Charmander', 'Charmeleon', 'Charizard',
   'Squirtle', 'Wartortle', 'Blastoise', 'Caterpie', 'Metapod', 'Butterfree',
   'Weedle', 'Kakuna', 'Beedrill', 'Pidgey', 'Pidgeotto', 'Pidgeot',
   'Rattata', 'Raticate', 'Spearow', 'Fearow', 'Ekans', 'Arbok',
@@ -493,16 +493,13 @@ export class PokebusComponent {
   'Roselia', 'Gulpin', 'Swalot', 'Carvanha', 'Sharpedo', 'Wailmer',
   'Wailord', 'Numel', 'Camerupt', 'Torkoal', 'Spoink', 'Grumpig',
   'Spheal', 'Sealeo', 'Walrein', 'Trapinch', 'Vibrava', 'Flygon',
-  'Cacnea', 'Cacturne',]; // Lista de Pokémon
-  pokemonEncontrado: string | null = null; // Almacena el Pokémon encontrado
-  mensaje: string = ''; // Almacena el mensaje de resultado
+  'Cacnea', 'Cacturne',]; 
+  pokemonEncontrado: string | null = null;
+  mensaje: string = ''; 
 
-  // Método para buscar Pokémon por nombre
   buscarPokemon() {
     const nombre = this.searchTerm.toLowerCase();
-    this.pokemonEncontrado = this.pokemons.find(pokemon => pokemon.toLowerCase() === nombre) || null;
-
-    // Mensajes en la propiedad "mensaje" según el estado de búsqueda
+    this.pokemonEncontrado = this.pokebus.find(pokemon => pokemon.toLowerCase() === nombre) || null;
     if (this.pokemonEncontrado) {
       this.mensaje = `¡Pokémon encontrado: ${this.pokemonEncontrado}!`;
     } else {
@@ -510,10 +507,9 @@ export class PokebusComponent {
     }
   }
 
-  // Método para reiniciar la búsqueda
   reiniciarBusqueda() {
     this.searchTerm = '';
     this.pokemonEncontrado = null;
-    this.mensaje = ''; // Limpia el mensaje al reiniciar
+    this.mensaje = '';
   }
 }

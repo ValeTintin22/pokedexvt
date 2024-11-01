@@ -1,1 +1,11 @@
 <p>pokedex works!</p>
+<div class="lista-container">
+    <button (click)="mostrarListaAleatoria()">Mostrar Pokémon Aleatorios</button>
+    <div *ngIf="pokemonList.length > 0">
+      <h2>Pokémon Aleatorios:</h2>
+      <ul>
+        <li *ngFor="let pokemon of pokemonList">{{ pokemon }}</li>
+      </ul>
+    </div>
+  </div>
+  
