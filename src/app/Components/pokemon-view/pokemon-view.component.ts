@@ -15,11 +15,8 @@ pokemonId: number=0;
 
 handlePokemon(event:number){
   this.pokemonId += event
-}
-
-siguientePokemon():void {
-  this.pokemonId++;
   this.pokemonImagen = 'https://raw.githubusercontent.com/PokeAPI/sprites/6e5b8ac354ddc347104840cbd14ad6e0b2fdb551/sprites/pokemon/'+this.pokemonId+'.png';
 }
+
 }
 
