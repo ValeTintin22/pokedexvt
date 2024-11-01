@@ -1,24 +1,28 @@
-<div class="health-container">
-    <p>Vida:</p>
-    <span id="health">5</span> <!-- Muestra la vida actual -->
-    <p>❤️</p>
-    <p>❤️</p>
-    <p>❤️</p>
-    <p>❤️</p>
-    <p>❤️</p>
+<div class="container">
+    <div class="health-container">
+        <p>Vida:</p>
+        <span>{{ vidaActual }}</span>
+        <div class="healthDisplay">
+            <p *ngFor="let heart of healthArray">❤️</p>
+        </div>
+    </div>
+
+    <div class="defensa">
+        <p>Defensa:</p>
+        <span>{{ defensa }}</span>
+        <p *ngFor="let heart of healthArray">👾</p>
+        
+    </div>
+
+    <div class="ataque">
+        <p>Ataque:</p>
+        <span>{{ ataque }}</span>
+        <p *ngFor="let heart of healthArray">💥</p>
+        
+    </div>
+
+    <button (click)="atacar()">Atacar</button>
+    <button (click)="curar()">Curar</button>
+    <button (click)="defender()">Defender</button>
 </div>
 
-<div class="defensa">
-    <p>Defensa:</p>
-    <span id="defense">3</span>
-    <p>👾</p>
-</div>
-
-<div class="ataque">
-    <p>Ataque:</p>
-    <span id="attack">4</span>
-    <p>💥</p>
-</div>
-
-<button id="attackButton">Atacar</button>
-<button id="healButton">Curar</button>

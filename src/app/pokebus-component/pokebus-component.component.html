@@ -1,0 +1,14 @@
+<app-pokebus (searchPokemon)="manejarBusqueda($event)"></app-pokebus>
+
+<div class="busqueda-container">
+   
+
+    <button (click)="buscarPokemon()">Buscar</button>
+    <button (click)="reiniciarBusqueda()">Reiniciar</button>
+  </div>
+  
+  <div class="mensaje">
+    <h2>Resultado:</h2>
+    <p>{{ mensaje }}</p> <!-- Muestra el mensaje en el DOM -->
+  </div>
+  

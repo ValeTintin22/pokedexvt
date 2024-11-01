@@ -59,22 +59,9 @@
     transform: translateY(5px);
 }
 
-.point {
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: rgb(255, 183, 101);
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: background-color 0.3s, transform 0.3s;
-}
 
-.point:hover {
-    background-color: rgb(255, 150, 50);
-    transform: scale(1.2);
-}
+
+
 
 .point:nth-of-type(1) {
     left: calc(50% + 20px);

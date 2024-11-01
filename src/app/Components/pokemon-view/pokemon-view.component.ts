@@ -10,7 +10,7 @@ import { PokemonComponent } from '../pokemon/pokemon.component';
   styleUrl: './pokemon-view.component.css'
 })
 export class PokemonViewComponent {
-pokemonImagen: string= 'https://raw.githubusercontent.com/PokeAPI/sprites/6e5b8ac354ddc347104840cbd14ad6e0b2fdb551/sprites/pokemon/5.png'
+pokemonImagen: string= 'https://raw.githubusercontent.com/PokeAPI/sprites/6e5b8ac354ddc347104840cbd14ad6e0b2fdb551/sprites/pokemon/0.png'
 pokemonId: number=0;
 
 handlePokemon(event:number){
